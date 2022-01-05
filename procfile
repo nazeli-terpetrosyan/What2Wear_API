@@ -1,2 +1,1 @@
-heroku ps:scale web=1
-web: uvicorn application.server.main:app --host 0.0.0.0 --port $PORT --workers 2name_of_envirnment\Scripts\activate  
+web: gunicorn -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT main:appate  
