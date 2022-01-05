@@ -1,1 +1,1 @@
-web: gunicorn server.main:app
+web: uvicorn server.main:app --host 0.0.0.0 --port 8080 --workers 2
