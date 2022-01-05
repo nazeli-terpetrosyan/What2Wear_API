@@ -1,8 +1,0 @@
-fastapi
-Pillow
-gunicorn
-uvicorn
-numpy
-python-multipart
-opencv-python
-requests
